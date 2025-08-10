@@ -14,11 +14,11 @@ brew install mode-terminal-navigator
 
 ## Available Formulas
 
-### Mode Terminal Navigator
+### Mode Terminal
 Interactive terminal application for navigating and managing development workflows on macOS with integrated AI assistant.
 
 ```bash
-brew install mode-terminal-navigator
+brew install mode-terminal
 ```
 
 **Features:**
@@ -33,4 +33,4 @@ brew install mode-terminal-navigator
 mode  # Launch the navigator
 ```
 
-**Repository:** https://github.com/JadenB9/mode-terminal-navigator
+**Repository:** https://github.com/JadenB9/mode-terminal

@@ -1,7 +1,7 @@
-class ModeTerminalNavigator < Formula
+class ModeTerminal < Formula
   desc "Interactive terminal application for navigating and managing development workflows on macOS with integrated AI assistant"
-  homepage "https://github.com/JadenB9/mode-terminal-navigator"
-  url "https://github.com/JadenB9/mode-terminal-navigator/archive/refs/tags/v1.0.0.tar.gz"
+  homepage "https://github.com/JadenB9/mode-terminal"
+  url "https://github.com/JadenB9/mode-terminal/archive/refs/tags/v1.0.0.tar.gz"
   sha256 "c2e79b1b8b685d205628931f48dc4e263b63227078d5f671bbcbbe2b6a460c4b"
   version "1.0.0"
   license "MIT"
