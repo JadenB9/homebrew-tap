@@ -2,7 +2,7 @@ class ModeTerminal < Formula
   desc "Interactive terminal application for navigating and managing development workflows on macOS with integrated AI assistant"
   homepage "https://github.com/JadenB9/mode-terminal"
   url "https://github.com/JadenB9/mode-terminal/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "c2e79b1b8b685d205628931f48dc4e263b63227078d5f671bbcbbe2b6a460c4b"
+  sha256 "c93d8a39717548699b16a65f08aba6d06a84c7a8ce5bd2a0552b8018703b4591"
   version "1.0.0"
   license "MIT"
 
@@ -33,7 +33,7 @@ class ModeTerminal < Formula
 
   def post_install
     puts ""
-    puts "🎉 Mode Terminal Navigator installed successfully!"
+    puts "🎉 Mode Terminal installed successfully!"
     puts ""
     puts "📖 Quick Start:"
     puts "   1. Run: mode"
@@ -47,6 +47,6 @@ class ModeTerminal < Formula
 
   test do
     # Test that the mode command exists and shows help
-    assert_match "Mode Terminal Navigator", shell_output("#{bin}/mode --version")
+    assert_match "Mode Terminal", shell_output("#{bin}/mode --version")
   end
 end
