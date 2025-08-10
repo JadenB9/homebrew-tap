@@ -13,16 +13,17 @@ class ModeTerminalNavigator < Formula
     # Install to libexec to avoid conflicts
     libexec.install Dir["*"]
     
-    # Install Python dependencies to libexec/lib  
-    system Formula["python@3.11"].opt_bin/"pip3", "install", 
-           "--target", "#{libexec}/lib",
-           "rich", "inquirer", "requests", "psutil"
-    
-    # Create wrapper script with proper Python path
+    # Create wrapper script that uses user's pip packages
     (bin/"mode").write <<~EOS
       #!/bin/bash
-      export PYTHONPATH="#{libexec}/lib:$PYTHONPATH"
       cd #{libexec}
+      
+      # Check if dependencies are installed, if not, install them
+      if ! #{Formula["python@3.11"].opt_bin}/python3 -c "import rich, inquirer, requests, psutil" 2>/dev/null; then
+        echo "Installing Python dependencies..."
+        #{Formula["python@3.11"].opt_bin}/pip3 install --user rich inquirer requests psutil
+      fi
+      
       exec #{Formula["python@3.11"].opt_bin}/python3 mode.py "$@"
     EOS
     
