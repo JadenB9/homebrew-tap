@@ -1,7 +1,8 @@
 class ModeTerminalNavigator < Formula
   desc "Interactive terminal application for navigating and managing development workflows on macOS with integrated AI assistant"
   homepage "https://github.com/JadenB9/mode-terminal-navigator"
-  url "https://github.com/JadenB9/mode-terminal-navigator/archive/refs/heads/main.tar.gz"
+  url "https://github.com/JadenB9/mode-terminal-navigator/archive/refs/tags/v1.0.0.tar.gz"
+  sha256 "8e5057afe2271be9b6bcce4a49a19715eeef807e1f0022f35ecb339c688d6b9b"
   version "1.0.0"
   license "MIT"
 
@@ -12,11 +13,9 @@ class ModeTerminalNavigator < Formula
     # Install to libexec to avoid conflicts
     libexec.install Dir["*"]
     
-    # Install Python dependencies to libexec/lib
-    ENV["PYTHONPATH"] = "#{libexec}/lib"
+    # Install Python dependencies to libexec/lib  
     system Formula["python@3.11"].opt_bin/"pip3", "install", 
            "--target", "#{libexec}/lib",
-           "--no-deps",
            "rich", "inquirer", "requests", "psutil"
     
     # Create wrapper script with proper Python path
