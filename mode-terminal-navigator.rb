@@ -19,12 +19,12 @@ class ModeTerminalNavigator < Formula
       cd #{libexec}
       
       # Check if dependencies are installed, if not, install them
-      if ! #{Formula["python@3.11"].opt_bin}/python3 -c "import rich, inquirer, requests, psutil" 2>/dev/null; then
+      if ! python3 -c "import rich, inquirer, requests, psutil" 2>/dev/null; then
         echo "Installing Python dependencies..."
-        #{Formula["python@3.11"].opt_bin}/pip3 install --user rich inquirer requests psutil
+        pip3 install --user rich inquirer requests psutil
       fi
       
-      exec #{Formula["python@3.11"].opt_bin}/python3 mode.py "$@"
+      exec python3 mode.py "$@"
     EOS
     
     # Make wrapper executable
