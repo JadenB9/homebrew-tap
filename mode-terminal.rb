@@ -1,8 +1,8 @@
 class ModeTerminal < Formula
-  desc "Interactive terminal application for navigating and managing development workflows on macOS with integrated AI assistant"
+  desc "Interactive terminal navigator v1.0 with Claude Code-style AI chat interface for macOS development workflows"
   homepage "https://github.com/JadenB9/mode-terminal"
   url "https://github.com/JadenB9/mode-terminal/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "d3a754bbc034eb3c7e28020959c43155b4eb3f287da0502e48339dd2f7b56c2f"
+  sha256 "f42041780a4b79da60d55c09db572d4a5f18d860b4d38572b41b37a25835497b"
   version "1.0.0"
   license "MIT"
 
@@ -33,13 +33,13 @@ class ModeTerminal < Formula
 
   def post_install
     puts ""
-    puts "🎉 Mode Terminal installed successfully!"
+    puts "> Mode Terminal installed successfully!"
     puts ""
-    puts "📖 Quick Start:"
+    puts "> Quick Start:"
     puts "   1. Run: mode"
     puts "   2. Press TAB for AI chat (requires Ollama)"
     puts ""
-    puts "🤖 For AI features, install Ollama:"
+    puts "> For AI features, install Ollama:"
     puts "   brew install ollama"
     puts "   ollama pull dolphin-mistral:7b"
     puts ""

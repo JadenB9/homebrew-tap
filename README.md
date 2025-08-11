@@ -22,11 +22,11 @@ brew install mode-terminal
 ```
 
 **Features:**
-- 🤖 AI Assistant with natural language commands
-- 🏠 Project & Development Management
-- 🛠️ Development Tools (port scanner, database explorer)
-- ⚙️ System & Maintenance utilities
-- 🗂️ File System & Organization tools
+- > AI Assistant with natural language commands
+- > Project & Development Management
+- > Development Tools (port scanner, database explorer)
+- > System & Maintenance utilities
+- > File System & Organization tools
 
 **Usage:**
 ```bash
