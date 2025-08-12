@@ -1,9 +1,9 @@
 class ModeTerminal < Formula
-  desc "Interactive terminal navigator v1.0 with Claude Code-style AI chat interface for macOS development workflows"
+  desc "Interactive terminal navigator v1.0.1 with Claude Code-style AI chat interface and smart display management"
   homepage "https://github.com/JadenB9/mode-terminal"
-  url "https://github.com/JadenB9/mode-terminal/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "f42041780a4b79da60d55c09db572d4a5f18d860b4d38572b41b37a25835497b"
-  version "1.0.0"
+  url "https://github.com/JadenB9/mode-terminal/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "f182da22515db0f6aa9cdb80c4d2eabc8bb707a172f2b897996d45c7d1fd7f68"
+  version "1.0.1"
   license "MIT"
 
   depends_on "python@3.11"
