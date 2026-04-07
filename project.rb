@@ -5,21 +5,21 @@
 class Project < Formula
   desc "TUI project scaffolder - create full-stack apps from your terminal"
   homepage "https://github.com/JadenB9/projectmaker"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JadenB9/projectmaker/releases/download/v0.1.0/project_0.1.0_darwin_amd64.tar.gz"
-      sha256 "04030bddd9a9a943e06156d54c6b7aa6cae2e7ab6c5b2e94dd3dad36e6ec32bb"
+      url "https://github.com/JadenB9/projectmaker/releases/download/v0.2.0/project_0.2.0_darwin_amd64.tar.gz"
+      sha256 "2059434998bd2220da9829e0e67c99d2146a05616d0e8b16aaf96c65bfee1365"
 
       define_method(:install) do
         bin.install "project"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JadenB9/projectmaker/releases/download/v0.1.0/project_0.1.0_darwin_arm64.tar.gz"
-      sha256 "c1bb92cb6bc39307a1edd6511e6da1eacc77d07bd421c32c818a93bade546a61"
+      url "https://github.com/JadenB9/projectmaker/releases/download/v0.2.0/project_0.2.0_darwin_arm64.tar.gz"
+      sha256 "34395d2b15bb75c4426630c74ea80fdf904b903e91ee1eb02cac569e90b8880c"
 
       define_method(:install) do
         bin.install "project"
@@ -29,15 +29,15 @@ class Project < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JadenB9/projectmaker/releases/download/v0.1.0/project_0.1.0_linux_amd64.tar.gz"
-      sha256 "5e745be41a9727205957561c7339c746280d24697d41c281f91a88d3b8517d28"
+      url "https://github.com/JadenB9/projectmaker/releases/download/v0.2.0/project_0.2.0_linux_amd64.tar.gz"
+      sha256 "111ab4264634286c5705acf16aab150c222373eb1778d09ca6d371cc1ac7a42a"
       define_method(:install) do
         bin.install "project"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JadenB9/projectmaker/releases/download/v0.1.0/project_0.1.0_linux_arm64.tar.gz"
-      sha256 "c6aed55a6015788031908449fa6566414162833f5629e08eebe00fd0ba24b85d"
+      url "https://github.com/JadenB9/projectmaker/releases/download/v0.2.0/project_0.2.0_linux_arm64.tar.gz"
+      sha256 "52e0ec87d8d44f1dc305fdeda728244bc994c7c5d71882534371606559a92588"
       define_method(:install) do
         bin.install "project"
       end
