@@ -2,7 +2,7 @@ class ModeTerminal < Formula
   desc "Interactive terminal navigator v1.0.1 with Claude Code-style AI chat interface and smart display management"
   homepage "https://github.com/JadenB9/mode-terminal"
   url "https://github.com/JadenB9/mode-terminal/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "f182da22515db0f6aa9cdb80c4d2eabc8bb707a172f2b897996d45c7d1fd7f68"
+  sha256 "9ac4089f21e24816c5a9f9185b0985c8ada92333925ca269ba968cc9bcee71fb"
   version "1.0.1"
   license "MIT"
 
