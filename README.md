@@ -1,36 +1,30 @@
-# JadenB9's Homebrew Tap
+# homebrew-tap
 
-Custom Homebrew formulas for JadenB9's tools.
-
-## Installation
+Homebrew formulas for my tools.
 
 ```bash
-# Add the tap
 brew tap jadenb9/tap
-
-# Install Mode Terminal Navigator
-brew install mode-terminal-navigator
 ```
 
-## Available Formulas
+## Formulas
 
-### Mode Terminal
-Interactive terminal application for navigating and managing development workflows on macOS with integrated AI assistant.
+### project
+
+The [projectmaker](https://github.com/JadenB9/projectmaker) TUI scaffolder —
+type `project` in a terminal and it walks you through creating a new
+full-stack app. Prebuilt binaries via GoReleaser (Intel + Apple Silicon).
 
 ```bash
-brew install mode-terminal
+brew install jadenb9/tap/project
 ```
 
-**Features:**
-- > AI Assistant with natural language commands
-- > Project & Development Management
-- > Development Tools (port scanner, database explorer)
-- > System & Maintenance utilities
-- > File System & Organization tools
+### mode-terminal
 
-**Usage:**
+[mode-terminal](https://github.com/JadenB9/mode-terminal), the menu-driven
+terminal launcher my shell opens into. Installs a `mode` wrapper that pulls
+its Python dependencies (rich, inquirer, requests, psutil) on first run.
+
 ```bash
-mode  # Launch the navigator
+brew install jadenb9/tap/mode-terminal
+mode
 ```
-
-**Repository:** https://github.com/JadenB9/mode-terminal
